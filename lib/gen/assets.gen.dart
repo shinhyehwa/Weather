@@ -7,6 +7,42 @@
 // ignore_for_file: type=lint
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/Poppins-Bold.ttf
+  String get poppinsBold => 'assets/fonts/Poppins-Bold.ttf';
+
+  /// File path: assets/fonts/Poppins-Regular.ttf
+  String get poppinsRegular => 'assets/fonts/Poppins-Regular.ttf';
+
+  /// File path: assets/fonts/Poppins-Thin.ttf
+  String get poppinsThin => 'assets/fonts/Poppins-Thin.ttf';
+
+  /// File path: assets/fonts/Roboto-Bold.ttf
+  String get robotoBold => 'assets/fonts/Roboto-Bold.ttf';
+
+  /// File path: assets/fonts/Roboto-Light.ttf
+  String get robotoLight => 'assets/fonts/Roboto-Light.ttf';
+
+  /// File path: assets/fonts/Roboto-Regular.ttf
+  String get robotoRegular => 'assets/fonts/Roboto-Regular.ttf';
+
+  /// File path: assets/fonts/Roboto-Thin.ttf
+  String get robotoThin => 'assets/fonts/Roboto-Thin.ttf';
+
+  /// List of all assets
+  List<String> get values => [
+        poppinsBold,
+        poppinsRegular,
+        poppinsThin,
+        robotoBold,
+        robotoLight,
+        robotoRegular,
+        robotoThin
+      ];
+}
+
 class $AssetsIconGen {
   const $AssetsIconGen();
 
@@ -91,6 +127,7 @@ class $AssetsImagesGen {
 class Assets {
   Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconGen icon = $AssetsIconGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
